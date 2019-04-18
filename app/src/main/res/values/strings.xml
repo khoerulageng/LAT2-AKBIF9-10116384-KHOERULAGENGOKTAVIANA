@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BloodShare</string>
+    <string name="pertanyaan">Doesn`t have account? <b>Register</b> </string>
+    TextView view = (TextView)findViewById(R.id.sampleText);
+    <string name="code">Doesn`t get the code? <b>Resend</b> </string>
+    TextView view = (TextView)findViewById(R.id.sampleText);
+    <string-array name="nama">
+        <item><font fgcolor="#808284">Blood Type</font></item>
+    </string-array>
+    <string-array name="job">
+        <item><font fgcolor="#808284">Job</font></item>
+    </string-array>
+    <string-array name="Reshus">
+        <item><font fgcolor="#808284">Reshus</font></item>
+    </string-array>
+</resources>

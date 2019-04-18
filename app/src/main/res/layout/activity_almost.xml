@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlmostActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#43b3e6">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almost There"
+            android:textColor="#ffffff"
+            android:textSize="45dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="175dp"/>
+        <TextView
+            android:id="@+id/isi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank your for registering with us. One more\nstep, you need to check your email \n to activate your account"
+            android:textAlignment="center"
+            android:layout_below="@+id/judul"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"/>
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/isi"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="100dp"
+            android:text="VERIFY"
+            android:textStyle="bold"
+            android:onClick="kehome"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonrippleblue"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#40B4E7">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_welcome_logo"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:hint="Username"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="100dp"
+            android:backgroundTint="#ffffff"
+            android:textColorHint="#ffffff"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:hint="Password"
+            android:layout_marginRight="100dp"
+            android:backgroundTint="#ffffff"
+            android:textColorHint="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="100dp"
+            android:text="LOGIN"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonrippleblue"/>
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="OR"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_login"/>
+        <Button
+            android:id="@+id/btn_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/or"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="100dp"
+            android:text="CONNECT WITH FACEBOOK"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:drawableLeft="@mipmap/ic_welcome_fb_login"
+            android:background="@drawable/buttonrippleblue"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_facebook"
+            android:layout_marginTop="20dp"
+            android:text="@string/pertanyaan"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:onClick="register"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
